@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+
+  fastlyexporter:
+    stdin_open: true
+    tty: true
+    build: .
+    ports:
+      - 4000:4000
+    environment:
+      TOKEN_KEY: '6e1d395baebb345bb965758190ab00ea'
+      SERVICE_ID: '3zRJDtytFaZ39ijkRS1lcG'
